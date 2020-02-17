@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { Menu1Component } from './menu1/menu1.component';
 import { ErrorComponent } from './error/error.component';
+import { MENU2Component } from './menu2/menu2.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   // canActive es el metodo que creamos en auth.guard.ts para prohibir la entrada a
   // los no logueados
   { path: 'menu1', component: Menu1Component },
+  { path: 'menu2', component: MENU2Component },
   { path: '**', component: ErrorComponent }
 
 ];
@@ -33,7 +35,8 @@ const routes: Routes = [
   declarations: [ 
     AppComponent, 
     Menu1Component,
-    ErrorComponent 
+    ErrorComponent,
+    MENU2Component 
     
     ],
     
